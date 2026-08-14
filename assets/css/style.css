@@ -3,12 +3,14 @@
 }
 
 :root {
+  --desc-font-family: Nunito, sans-serif;
   --head-font-family: Playfair Display, sans-serif;
   --main-background-color: #140305;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -23,7 +25,6 @@ body {
   font-family:
     Playfair Display,
     sans-serif;
-  height: 1000px;
 }
 
 /* Dùng chung */
@@ -40,7 +41,7 @@ a {
 
 .btn {
   display: block;
-  font-family: Nunito, sans-serif;
+  font-family: var(--desc-font-family);
   font-weight: bold;
   font-size: 1.4rem;
   text-align: center;
@@ -52,7 +53,7 @@ a {
 }
 
 .btn:hover {
-  transform: scale(105%);
+  transform: scale(107%);
 }
 
 .yellow-text {
@@ -125,7 +126,7 @@ a {
 
 .header .body-header .content_logo .nickname {
   color: rgba(255, 255, 255, 0.5);
-  font-family: Nunito;
+  font-family: var(--desc-font-family);
   font-size: 1.2rem;
   line-height: 1.6rem;
 }
@@ -140,7 +141,7 @@ a {
 
 .nav a {
   color: rgba(255, 255, 255, 0.7);
-  font-family: Nunito;
+  font-family: var(--desc-font-family);
   font-style: SemiBold;
   font-size: 1.4rem;
   line-height: 2rem;
@@ -216,7 +217,7 @@ a {
 .hero .logo .year {
   display: inline-block;
   color: #f5d060;
-  font-family: Nunito, sans-serif;
+  font-family: var(--desc-font-family);
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 1.6rem;
@@ -273,7 +274,7 @@ a {
 
 .hero .hero_desc {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Nunito, sans-serif;
+  font-family: var(--desc-font-family);
   font-size: 1.8rem;
   line-height: 2.93rem;
 }
@@ -311,6 +312,10 @@ a {
 }
 
 /* info */
+.info {
+  padding: 96px 0px;
+}
+
 .info .main-content {
   width: 1152px;
 }
@@ -368,7 +373,7 @@ a {
 }
 
 .info .info-header .info-label {
-  font-family: Nunito, sans-serif;
+  font-family: var(--desc-font-family);
   font-size: 1.6rem;
   font-weight: light;
   color: rgba(255, 255, 255, 0.5);
@@ -378,21 +383,54 @@ a {
 
 .info .info-body {
   display: flex;
+  justify-content: space-between;
+
+  padding-top: 56px;
+}
+
+.info .info-body .body-content {
+  width: 48%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .info .info-body .body-content .desc {
-  width: 552px;
-  height: 78px;
-
-  font-family: Nunito, sans-serif;
+  font-family: var(--desc-font-family);
   font-size: 1.6rem;
 
   color: rgba(255, 255, 255, 0.7);
 }
 
 .info .info-body .body-data {
-  width: 552px;
+  width: 48%;
   height: 260px;
+}
+
+.info-body .body-data .body-data-line-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-body .body-data .body-data-line-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.info-body .body-data .card {
+  width: 268px;
+  height: 122px;
+
+  padding: 24px;
+
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 16px;
+
+  background-color: rgba(255, 255, 255, 0.03);
+
+  text-align: center;
 }
 
 .body-data .card .number {
@@ -412,3 +450,33 @@ a {
     -webkit-background-clip: text;
   }
 }
+
+.body-data .card .card-desc {
+  font-family: var(--desc-font-family);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.35px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* .body-data .card.card1 {
+  position: absolute;
+}
+
+.body-data .card.card2 {
+  position: absolute;
+  right: 0px;
+}
+
+.body-data .card.card3 {
+  position: absolute;
+  bottom: 0px;
+}
+
+.body-data .card.card4 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+} */
