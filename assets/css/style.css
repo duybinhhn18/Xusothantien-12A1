@@ -34,7 +34,7 @@ a {
 
 .main-content {
   min-width: 796px;
-  width: 1280px;
+  width: 1152px;
   max-width: calc(100% - 86px);
   margin: 0 auto;
 }
@@ -69,6 +69,10 @@ a {
   position: sticky;
   top: 0px;
   transition: all 0.4s ease-out;
+}
+
+.header .main-content {
+  width: 1280px;
 }
 
 .header.scrolled {
@@ -432,6 +436,11 @@ a {
 
   text-align: center;
 }
+
+/* .info-body .body-data .card1,
+.info-body .body-data .card3 {
+  margin-right: 16px;
+} */
 
 .body-data .card .number {
   font-family: var(--head-font-family);
