@@ -36,7 +36,8 @@ a {
 .main-content {
   min-width: 796px;
   width: 1152px;
-  max-width: calc(100% - 86px);
+  max-width: 1152px;
+  /*max-width: calc(100% - 86px);*/
   margin: 0 auto;
 }
 
@@ -322,7 +323,7 @@ a {
 }
 
 .info .main-content {
-  width: 1152px;
+  /*width: 1152px;*/
 }
 
 .info .info-header {
