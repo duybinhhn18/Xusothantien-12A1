@@ -412,15 +412,11 @@ a {
   height: 260px;
 }
 
-.info-body .body-data .body-data-line-1 {
-  display: flex;
-  justify-content: space-between;
-}
+.info .info-body .body-data {
+  display: grid;
+  gap: 17px;
 
-.info-body .body-data .body-data-line-2 {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 16px;
+  grid-template-columns: repeat(2, minmax(268px, 268px));
 }
 
 .info-body .body-data .card {
@@ -436,11 +432,6 @@ a {
 
   text-align: center;
 }
-
-/* .info-body .body-data .card1,
-.info-body .body-data .card3 {
-  margin-right: 16px;
-} */
 
 .body-data .card .number {
   font-family: var(--head-font-family);
@@ -469,23 +460,3 @@ a {
 
   color: rgba(255, 255, 255, 0.5);
 }
-
-/* .body-data .card.card1 {
-  position: absolute;
-}
-
-.body-data .card.card2 {
-  position: absolute;
-  right: 0px;
-}
-
-.body-data .card.card3 {
-  position: absolute;
-  bottom: 0px;
-}
-
-.body-data .card.card4 {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-} */
