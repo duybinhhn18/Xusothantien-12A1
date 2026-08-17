@@ -25,6 +25,7 @@ body {
   font-family:
     Playfair Display,
     sans-serif;
+  width: 100vh;
 }
 
 /* Dùng chung */
@@ -321,7 +322,7 @@ a {
 }
 
 .info .main-content {
-  width: 1152px;
+  /*width: 1152px;*/
 }
 
 .info .info-header {
