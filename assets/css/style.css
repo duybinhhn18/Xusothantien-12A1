@@ -718,7 +718,7 @@ a {
   height: 234px;
 
   display: grid;
-  gap: 40px;
+  /* gap: 40px; */
   grid-template-columns: repeat(3, 1fr);
 }
 
