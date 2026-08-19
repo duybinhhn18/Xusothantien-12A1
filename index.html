@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style-mobile.css">
     <title>Xứ sở thần tiên - 12A1</title>
   </head>
   <body>
@@ -38,10 +39,10 @@
                 <a href="#info">Giới Thiệu</a>
               </li>
               <li>
-                <a href="#!">Giáo Viên</a>
+                <a href="#teacher">Giáo Viên</a>
               </li>
               <li>
-                <a href="#!">Thành viên</a>
+                <a href="#member-list">Thành viên</a>
               </li>
               <li>
                 <a href="#!">Thành tựu</a>
@@ -50,7 +51,7 @@
                 <a href="#!">Hình ảnh</a>
               </li>
               <li>
-                <a href="#!">Liên hệ</a>
+                <a href="#footer">Liên hệ</a>
               </li>
             </ul>
           </div>
@@ -79,7 +80,7 @@
 
           <div class="action">
             <a href="#info" class="btn btn_dicovery">Khám phá lớp học</a>
-            <a href="#!" class="btn btn_list_of_member">Danh sách thành viên</a>
+            <a href="#member-list" class="btn btn_list_of_member">Danh sách thành viên</a>
           </div>
         </div>
       </div>
@@ -147,7 +148,7 @@
     <div class="line__after-page"></div>
 
     <!-- Teacher -->
-    <div class="teacher">
+    <div class="teacher" id="teacher">
       <div class="main-content">
         <div class="teacher__header">
           <div class="head-star">
@@ -204,7 +205,284 @@
       </div>
     </div>
 
+    <div class="line__after-page"></div>
+
+    <!-- Member list -->
+    <div class="member-list" id="member-list">
+      <div class="main-content">
+        <div class="member-list__header">
+          <div class="head-star">
+            <div class="line line_1"></div>
+            <img src="./assets/icon/Star.svg" alt="star" class="star">
+            <div class="line line_2"></div>
+          </div>
+
+          <h1 class="member-list__heading">Thành Viên Lớp</h1>
+          <p class="memmber-list__heading--desc">Danh sách 36 học sinh lớp 12A1</p>
+        </div>
+
+        <div class="member-list__body">
+          <div class="member-list__table--head">
+            <p class="member-list__title-numbers">STT</p>
+            <p class="member-list__title--name">Họ và tên</p>
+          </div>
+          <div class="member-list__table--body">
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">1</p>
+              </div>
+              <p class="member-list__card--name">Nguyễn Bình An</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">2</p>
+              </div>
+              <p class="member-list__card--name">Dương Thị Hà Kiều Anh</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">3</p>
+              </div>
+              <p class="member-list__card--name">Nguyễn Tuấn Anh</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">4</p>
+              </div>
+              <p class="member-list__card--name">Phạm Lê Duy Anh</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">5</p>
+              </div>
+              <p class="member-list__card--name">Huỳnh Lê Duy Bình</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">6</p>
+              </div>
+              <p class="member-list__card--name">Giáp Bùi Hùng Cường</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">7</p>
+              </div>
+              <p class="member-list__card--name">Châu Khánh Duy</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">8</p>
+              </div>
+              <p class="member-list__card--name">Hoàng Thị Thùy Dương</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">9</p>
+              </div>
+              <p class="member-list__card--name">Phạm Hồng Đỉnh</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">10</p>
+              </div>
+              <p class="member-list__card--name">Nguyễn Hồ Ngọc Giỏi</p>
+            </div>
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">11</p>
+              </div>
+              <p class="member-list__card--name">Ngô Phan Gia Hân</p>
+            </div>
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">12</p>
+              </div>
+              <p class="member-list__card--name">Phan Gia Hân</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">13</p>
+              </div>
+              <p class="member-list__card--name">Trương Mỹ Hoa</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">14</p>
+              </div>
+              <p class="member-list__card--name">Nguyễn Tấn Hưng</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">15</p>
+              </div>
+              <p class="member-list__card--name">Võ Đông Hy</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">16</p>
+              </div>
+              <p class="member-list__card--name">Đỗ Minh Khải</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">17</p>
+              </div>
+              <p class="member-list__card--name">Nguyễn Lê Tuấn Kiệt</p>
+            </div>
+
+            <div class="member-list__card" style="border-radius: 0 0 0 28px;">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">18</p>
+              </div>
+              <p class="member-list__card--name">Phan Trịnh Tuệ Minh</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">19</p>
+              </div>
+              <p class="member-list__card--name">Lê Ngọc Thảo My</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">20</p>
+              </div>
+              <p class="member-list__card--name">Nguyễn Trần Khánh My</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">21</p>
+              </div>
+              <p class="member-list__card--name">Hoàng Kim Ngân</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">22</p>
+              </div>
+              <p class="member-list__card--name">Phan Thị Cẩm Ngân</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">23</p>
+              </div>
+              <p class="member-list__card--name">Hứa Ngọc Xuân Nghi</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">24</p>
+              </div>
+              <p class="member-list__card--name">Võ Hoàng Kim Ngọc</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">25</p>
+              </div>
+              <p class="member-list__card--name">Hồ Lê Như Nhã</p>
+            </div>
+            
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">26</p>
+              </div>
+              <p class="member-list__card--name">Trần Đắc Nhân</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">27</p>
+              </div>
+              <p class="member-list__card--name">Lý Huỳnh Như</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">28</p>
+              </div>
+              <p class="member-list__card--name">Trần Ngọc Phúc</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">29</p>
+              </div>
+              <p class="member-list__card--name">Mai Ngọc Bích Quyên</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">30</p>
+              </div>
+              <p class="member-list__card--name">Trần Nguyễn Bảo Thi</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">31</p>
+              </div>
+              <p class="member-list__card--name">Trần Thủy Tiên</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">32</p>
+              </div>
+              <p class="member-list__card--name">Đặng Huỳnh Trâm</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">33</p>
+              </div>
+              <p class="member-list__card--name">Lâm Ngọc Bảo Trâm</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">34</p>
+              </div>
+              <p class="member-list__card--name">Hồ Kiều Lan Vy</p>
+            </div>
+
+            <div class="member-list__card">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">35</p>
+              </div>
+              <p class="member-list__card--name">Nguyễn Huỳnh Lan Vy</p>
+            </div>
+
+            <div class="member-list__card" style="border-radius: 0 0 28px 0;">
+              <div class="member-list__card--number-box">
+                <p class="member-list__card--number">36</p>
+              </div>
+              <p class="member-list__card--name">Phan Thị Thảo Vy</p>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
+    <div class="footer__locate" id="footer"></div>
     <footer class="footer">
       <div class="main-content footer__main-content--fixed">
         <!-- <div class="footer__backgeffect-head--gradient"></div> -->
