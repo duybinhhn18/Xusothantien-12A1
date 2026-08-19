@@ -11,6 +11,9 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth !important;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 175, 55, 1) #0f0204;
 }
 
 body {
@@ -148,10 +151,13 @@ a {
   display: flex;
 }
 
+.nav__item {
+  position: relative;
+}
+
 .nav a {
   color: rgba(255, 255, 255, 0.7);
   font-family: var(--desc-font-family);
-  font-style: SemiBold;
   font-size: 1.4rem;
   line-height: 2rem;
   padding: 5px 16px;
@@ -159,6 +165,20 @@ a {
 
 .nav a:hover {
   color: oklch(87.9% 0.169 91.605);
+}
+
+.nav a:hover::after {
+  content: "";
+  display: block;
+
+  width: 68%;
+  height: 1px;
+  border-radius: 1px;
+  background: rgba(212, 175, 55, 1);
+
+  position: absolute;
+  left: 16px;
+  bottom: 0px;
 }
 
 /* Hero */
@@ -460,6 +480,16 @@ a {
   background-color: rgba(255, 255, 255, 0.03);
 
   text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+.info-body .body-data div:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 1px 25px 40px 0px rgba(212,175,55, 0.2);
+  -webkit-box-shadow: 1px 25px 40px 0px rgba(212,175,55, 0.2);
+  -moz-box-shadow: 1px 25px 40px 0px rgba(212,175,55, 0.2);          
 }
 
 .body-data .card .number {
@@ -557,6 +587,16 @@ a {
 
   background: #C41E3A;
   background: linear-gradient(90deg, rgba(196, 30, 58, 0.12) 0%, rgba(143, 22, 42, 0.17) 6%, rgba(113, 18, 33, 0.22) 13%, rgba(82, 14, 23, 0.31) 25%, rgba(65, 11, 18, 0.41) 38%, rgba(55, 10, 15, 0.51) 50%, rgba(43, 8, 11, 0.7) 75%, rgba(36, 7, 9, 0.9) 100%);
+
+  transition: all 0.3s ease;
+}
+
+.teacher__content--card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 1px 25px 40px 0px rgba(212,175,55, 0.2);
+  -webkit-box-shadow: 1px 25px 40px 0px rgba(212,175,55, 0.2);
+  -moz-box-shadow: 1px 25px 40px 0px rgba(212,175,55, 0.2);
 }
 
 .teacher__class {
@@ -741,6 +781,12 @@ a {
   padding: 14px 24px;
 
   border: 1px solid rgba(212, 175, 55, 0.1);
+
+  transition: all 0.3s ease;
+}
+
+.member-list__card:hover {
+  background: rgba(196, 30, 58, 0.15);
 }
 
 .member-list__card--number-box {
