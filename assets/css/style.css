@@ -596,6 +596,12 @@ a {
   width: 96px;
   height: 96px;
   object-fit: cover;
+
+  object-position: center top;
+}
+
+.teacher__avata--img-thayVu {
+  transform: scale(2);
 }
 
 .teacher__title--year {
