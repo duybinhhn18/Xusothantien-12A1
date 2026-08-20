@@ -15,8 +15,8 @@ function checkScreenSize() {
   }
 }
 
-// Kiểm tra ngay khi tải trang
-checkScreenSize();
+// // Kiểm tra ngay khi tải trang
+// checkScreenSize();
 
-// Kiểm tra lại nếu người dùng thay đổi kích thước trình duyệt
-window.addEventListener("resize", checkScreenSize);
+// // Kiểm tra lại nếu người dùng thay đổi kích thước trình duyệt
+// window.addEventListener("resize", checkScreenSize);
