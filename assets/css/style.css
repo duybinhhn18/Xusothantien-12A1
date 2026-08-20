@@ -159,6 +159,10 @@ a {
   line-height: 1.6rem;
 }
 
+.nav__small {
+  display: none;
+}
+
 .nav {
   margin-left: auto;
 }
@@ -234,7 +238,7 @@ a {
 } */
 
 .hero .hero-container {
-  max-width: 624px;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -486,7 +490,7 @@ a {
   display: grid;
   gap: 16px;
 
-  grid-template-columns: repeat(2, minmax(0, 268px));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .info-body .body-data .card {
@@ -707,6 +711,8 @@ a {
 .teacher__heading--name-short {
   display: none;
 }
+
+
 
 /* Member list */
 .member-list {
