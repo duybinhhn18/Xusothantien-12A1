@@ -611,6 +611,8 @@ a {
   background: linear-gradient(90deg, rgba(196, 30, 58, 0.12) 0%, rgba(143, 22, 42, 0.17) 6%, rgba(113, 18, 33, 0.22) 13%, rgba(82, 14, 23, 0.31) 25%, rgba(65, 11, 18, 0.41) 38%, rgba(55, 10, 15, 0.51) 50%, rgba(43, 8, 11, 0.7) 75%, rgba(36, 7, 9, 0.9) 100%);
 
   transition: all 0.3s ease;
+
+  position: relative;
 }
 
 .teacher__content--card:hover {
@@ -622,7 +624,7 @@ a {
 }
 
 .teacher__class {
-  width: 65px;
+  display: inline-block;
   height: 26px;
 
   padding: 4px 12px;
@@ -630,6 +632,12 @@ a {
   border: 1px solid rgba(212, 175, 55, 0.3);
   
   background: rgba(212, 175, 55, 0.15);
+
+  margin-right: auto;
+
+  position: absolute;
+  top: 21px;
+  left: 76%;
 }
 
 .teacher__class--title {
@@ -639,6 +647,8 @@ a {
   line-height: 1.6rem;
 
   color: rgba(212, 175, 55, 1);
+
+  
 }
 
 .teacher__avata {
@@ -985,25 +995,87 @@ a {
 
   object-fit: cover;
 
-  transition: all 0.3s ease;
+  position: relative;
 }
 
-.picture__img:hover {
+.picture__effect {
+  transition: all 0.3s ease;
+
+  position: relative;
+}
+
+.picture__effect::after {
+  content: "";
+
+  display: flex;
+  height: 25px;
+  width: 97.5%;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+
+  font-family: var(--head-font-family);
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.28rem;
+
+  color: rgba(212, 175, 55, 1);
+
+  background: rgba(0, 0, 0, 10.07);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+  border-radius: 12px;
+
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.15s linear;
+}
+
+.picture__effect:hover {
   transform: scale(1.03);
 }
 
-.picture:hover::after {
-  content: "Đây là ảnh minh họa";
+.picture__effect:hover::after {
+  transform: translateY(0%);
+  opacity: 1;
+  transition-delay: 0s 0.15s;
 }
+
+
+/* .nav a:hover::after {
+  content: "";
+  display: block;
+
+  width: 68%;
+  height: 1px;
+  border-radius: 1px;
+  background: rgba(212, 175, 55, 1);
+
+  position: absolute;
+  left: 16px;
+  bottom: 0px;
+} */
 
 .picture__img--1 {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
+.picture__img--1:hover::after {
+  content: "Chụp cùng cô hiền";
+}
+
 .picture__img--2 {
   grid-column-start: 3;
   grid-column-end: 4;
+}
+
+.picture__img--2:hover::after {
+  content: "Lễ tổng kết năm lớp 11";
 }
 
 .picture__img--3 {
@@ -1013,11 +1085,59 @@ a {
   grid-row-end: 3;
 }
 
+.picture__img--3:hover::after {
+  content: "Văn nghệ 20-11";
+}
+
 .picture__img--4 {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+.picture__img--4:hover::after {
+  content: "Chụp cùng thầy Vũ và Thầy Văn";
+}
+
+.picture__img--5:hover::after {
+  content: "Chụp cùng chị Phúc";
+}
+
+.picture__img--6:hover::after {
+  content: "Cuộc thi trang phục tái chế";
+}
+
+.picture__img--7:hover::after {
+  content: "Hội xuân 2026";
+}
+
+.picture__img--8 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+
+.picture__img--8:hover::after {
+  content: "Văn nghệ 20-11";
+}
+
+.picture__img--9:hover::after {
+  content: "Văn nghệ 20-11";
+}
+
+.picture__img--10:hover::after {
+  content: "Văn nghệ 20-11";
+}
+
+.picture__img--11:hover::after {
+  content: "Tiếp sức mùa thi";
+}
+
+.picture__img--12:hover::after {
+  content: "Văn nghệ 20-11";
 }
 
 /* Footer */
