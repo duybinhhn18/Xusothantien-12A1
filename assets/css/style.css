@@ -676,6 +676,13 @@ a {
   transform: scale(2);
 }
 
+.teacher__avata--img-coTim {
+  /* object-fit: contain; */
+  /* object-position: 30% 100%; */
+  object-position: right center;
+  transform: scale(1.3);
+}
+
 .teacher__title--year {
   font-family: var(--desc-font-family);
   font-size: 1.2rem;
