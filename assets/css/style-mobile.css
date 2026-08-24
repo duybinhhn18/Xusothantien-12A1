@@ -11,6 +11,13 @@
 }
 
 @media (max-width: 797px) {
+  /* dung chung */
+  .main-content {
+    width: 688px;
+    max-width: calc(100% - 30px);
+  }
+
+  /* nav */
   .nav__big {
     display: none;
   }
@@ -18,6 +25,8 @@
   .nav__small {
     display: block;
   }
+
+  /* info */
 
   .info .info-body {
     flex-direction: column;
@@ -39,4 +48,120 @@
   .info .info-body .body-content .desc3 {
     padding-top: 20px;
   }
+
+  /* teacher */
+  .teacher__content {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  /* member-list */
+  .member-list__table--body {
+    grid-template-rows: repeat(36, minmax(0, 1fr));
+    grid-template-columns: repeat(1,minmax(0, 1fr));
+  }
+
+  /* achievement */
+  .achievement__body {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    /* grid-template-rows: repeat(1, minmax(6, 1fr)); */
+  } 
+
+  /* picture */
+  .picture__body {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .picture__img--2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  }
+
+  .picture__img--3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  }
+
+  .picture__img--4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  }
+  
+  .picture__img--5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .picture__img--6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  }
+
+  .picture__img--7 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  }
+
+  .picture__img--8 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+
+  .picture__img--9 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  }
+
+  .picture__img--10 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  }
+
+  .picture__img--11 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 9;
+  }
+
+  .picture__img--12 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  }
+
+
+
+  /* footer */
+  .footer__contact-section {
+    grid-template-columns: repeat(1, 1fr);
+
+    gap: 40px;
+  }
 }
+
+
+/* @media (max-width: 480px) {
+  .teacher__class {
+    left: 65%;
+  }
+} */

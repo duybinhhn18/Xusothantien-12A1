@@ -244,7 +244,7 @@ a {
 
 .hero .hero_media {
   margin: 0 auto;
-  width: 576px;
+  width: 50%;
   height: 253px;
 }
 
@@ -263,11 +263,13 @@ a {
   height: 192px;
 
   position: absolute;
-  left: 124.5px;
+  left: 22%;
 }
 
 .hero .logo .year {
   display: inline-block;
+  min-width: 136px;
+
   color: #f5d060;
   font-family: var(--desc-font-family);
   font-size: 1.2rem;
@@ -282,7 +284,7 @@ a {
   border: 1px solid rgba(212, 175, 55, 0.3);
 
   position: absolute;
-  left: 316.5px;
+  left: 55%;
   top: 207px;
 }
 
@@ -340,6 +342,8 @@ a {
 
 .hero .action .btn_dicovery,
 .hero .action .btn_list_of_member {
+  /* width: 32%;
+  max-width: 187px; */
   letter-spacing: 0.35px;
   color: #f5d060;
 }
@@ -626,14 +630,13 @@ a {
 .teacher__class {
   display: inline-block;
   height: 26px;
+  min-width: 86px;
 
   padding: 4px 12px;
   border-radius: 999px;
   border: 1px solid rgba(212, 175, 55, 0.3);
   
   background: rgba(212, 175, 55, 0.15);
-
-  margin-right: auto;
 
   position: absolute;
   top: 21px;
