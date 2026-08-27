@@ -337,7 +337,10 @@ a {
   margin-top: 42px;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: grid;
+
+  grid-template-columns: repeat(2, 187px);
+  gap: 36px;
 }
 
 .hero .action .btn_dicovery,
@@ -357,7 +360,6 @@ a {
 }
 
 .hero .action .btn_list_of_member {
-  margin-left: 36px;
   border: 1px solid #d4af37;
 }
 
@@ -554,7 +556,7 @@ a {
 
 /* Teacher info */
 .teacher {
-  padding: 96px 24px;
+  padding: 96px 0px;
 
   border-top: ;
 }
@@ -736,7 +738,7 @@ a {
 
 /* Member list */
 .member-list {
-  padding: 96px 24px;
+  padding: 96px 0px;
 }
 
 .member-list__header {
@@ -875,9 +877,14 @@ a {
   color: #F5D060;
 }
 
+.member-list__card--end-1,
+.member-list__card--end-2 {
+  border-radius: 0 0 28px 0;
+}
+
 /* achievement */
 .achievement {
-  padding: 96px 24px;
+  padding: 96px 0px;
 }
 
 .achievement__header {
