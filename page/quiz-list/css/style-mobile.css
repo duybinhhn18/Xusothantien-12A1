@@ -1,0 +1,50 @@
+@media (max-width: 920px) {
+  .body__main-content {
+    gap: 20px;
+  }
+
+  .body__test-UI--body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 599px) {
+  .body__test-UI--body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 790px) {
+  /* dùng chung */
+  .main-content {
+    /* width: 688px !important;
+    max-width: calc(100% - 48px); */
+    min-width: 250px;
+  }
+
+  /* header */
+  /* .header__content {
+    display: none;
+  } */
+
+  .nav__big {
+    display: none;
+  }
+
+  .nav__small {
+    display: block !important;
+  }
+
+  /* body */
+  .body__main-content {
+    display: block;
+  }
+
+  .body__sidebar {
+    display: none;
+  }
+
+  /* .body__test-UI--body {
+    grid-template-columns: repeat(1, 1fr);
+  } */
+}
